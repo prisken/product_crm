@@ -1,4 +1,5 @@
 import React from 'react';
+import { X, TrendingUp, Zap } from 'lucide-react';
 import { 
   ComposedChart, 
   Line, 
@@ -10,8 +11,6 @@ import {
   Legend, 
   ResponsiveContainer 
 } from 'recharts';
-import { ProjectionResult } from '../utils/projections';
-import { X, TrendingUp, ShieldCheck, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface FundingAnalysisChartProps {
@@ -135,7 +134,7 @@ export const FundingAnalysisChart: React.FC<FundingAnalysisChartProps> = ({
                 />
                 <Tooltip 
                   contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
-                  formatter={(value: number) => [`HKD ${Math.round(value).toLocaleString()}`]}
+                  formatter={(value: number) => [`HKD ${Math.round(value).toLocaleString()}`, "Value"]}
                   labelFormatter={(label) => `Age ${label}`}
                 />
                 <Legend iconType="circle" />

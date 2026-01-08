@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { useStore } from '../store/useStore';
 import { products } from '../data/products';
 import { calculatePremiumSchedule, calculateFundingProjection } from '../utils/projections';
-import { Calendar, User, Shield, Activity, TrendingUp, CheckCircle2, FileText } from 'lucide-react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { Calendar, User, Activity, FileText, CheckCircle2 } from 'lucide-react';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid } from 'recharts';
 
 // A simple, pure functional component for the report content
 export const ClientReport: React.FC = () => {

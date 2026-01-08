@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PortfolioItem as IPortfolioItem, useStore } from '../store/useStore';
 import { products, Product } from '../data/products';
-import { X, DollarSign, Shield, Info, Star, Link, Zap, CheckCircle, AlertTriangle, Sliders, ChevronDown, ChevronUp, HelpCircle, TrendingUp } from 'lucide-react';
+import { X, DollarSign, Shield, Info, Star, Link, Zap, CheckCircle, AlertTriangle, Sliders, HelpCircle, TrendingUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useDroppable } from '@dnd-kit/core';
 
