@@ -135,6 +135,7 @@ export const FundingAnalysisChart: React.FC<FundingAnalysisChartProps> = ({
                 />
                 <Tooltip 
                   contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+                  // @ts-ignore
                   formatter={(value: number) => [`HKD ${Math.round(value).toLocaleString()}`, "Value"]}
                   labelFormatter={(label) => `Age ${label}`}
                 />

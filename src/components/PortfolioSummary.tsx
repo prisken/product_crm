@@ -331,6 +331,7 @@ export const PortfolioSummary: React.FC = () => {
                               </defs>
                               <RechartsTooltip 
                                 contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                                // @ts-ignore
                                 formatter={(value: number) => [`HKD ${value.toLocaleString()}`, 'Value']}
                               />
                               <Area type="monotone" dataKey="value" stroke="#f59e0b" fillOpacity={1} fill="url(#colorValue)" strokeWidth={2} />

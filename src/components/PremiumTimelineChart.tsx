@@ -151,6 +151,7 @@ export const PremiumTimelineChart: React.FC<PremiumTimelineChartProps> = ({ isOp
                     />
                     <Tooltip 
                       contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
+                      // @ts-ignore
                       formatter={(value: number) => [`HKD ${value.toLocaleString()}`, ""]}
                       labelFormatter={(label) => `Age ${label}`}
                     />
