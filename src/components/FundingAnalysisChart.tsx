@@ -1,5 +1,4 @@
 import React from 'react';
-import { X, TrendingUp, Zap } from 'lucide-react';
 import { 
   ComposedChart, 
   Line, 
@@ -11,6 +10,8 @@ import {
   Legend, 
   ResponsiveContainer 
 } from 'recharts';
+import { ProjectionResult } from '../utils/projections';
+import { X, TrendingUp, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface FundingAnalysisChartProps {
