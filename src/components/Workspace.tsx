@@ -8,7 +8,8 @@ import {
   DragStartEvent,
   useSensor,
   useSensors,
-  PointerSensor,
+  TouchSensor,
+  MouseSensor,
   closestCorners,
 } from '@dnd-kit/core';
 import { useStore } from '../store/useStore';
@@ -45,11 +46,17 @@ export const Workspace: React.FC = () => {
   const [activeProduct, setActiveProduct] = useState<Product | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Robust sensor configuration
+  // Robust sensor configuration for Mouse and Touch (iPad)
   const sensors = useSensors(
-    useSensor(PointerSensor, {
+    useSensor(MouseSensor, {
       activationConstraint: {
-        distance: 8,
+        distance: 10,
+      },
+    }),
+    useSensor(TouchSensor, {
+      activationConstraint: {
+        delay: 250,
+        tolerance: 5,
       },
     })
   );
